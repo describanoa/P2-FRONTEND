@@ -1,18 +1,19 @@
 html, body {
   font-family: 'Dancing Script', cursive;
-  background-color: #ffffff;
-  height: 1000px;
+  height: 900px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-image: url('interlaced.png');
+  background-repeat: repeat;
 }
+
 .tituloTrivia {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 100%;
   font-size: 350%;
   font-weight: bold;
 }
@@ -30,7 +31,7 @@ html, body {
   background-color: rgb(255, 255, 255);
 }
 h1 {
-  font-size: 32px;
+  font-size: 42px;
   margin-bottom: 10px;
 }
 h3 {

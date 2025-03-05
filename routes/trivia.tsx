@@ -10,7 +10,7 @@ export const handler: Handlers = {
             if (!API_KEY) throw new Error("API_KEY not found");
             const response = await Axios.get<Trivial[]>(`https://api.api-ninjas.com/v1/trivia`, {
                 headers: {
-                    'X-Api-Key': "+OWGjzq8bw10JOFeJRp6ig==FCKY09pqAO6oHYGc"
+                    'X-Api-Key': API_KEY
                 }
             });
             return ctx.render(response.data[0]);
@@ -23,10 +23,7 @@ export const handler: Handlers = {
 
 const Page = (props: PageProps<Trivial>) => {
     return (
-        <div>
-            {console.log(props.data.answer)}
-            <Pregunta data={props.data} />
-        </div>
+        <Pregunta data={props.data} />
     );
 }
 

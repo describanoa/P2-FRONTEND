@@ -29,6 +29,7 @@ export const Pregunta: FunctionalComponent<Props> = (Props) => {
                     }
                 }}>Enviar</button>
             </div>
+            {console.log(data.answer)}
         </div>
     );
 }

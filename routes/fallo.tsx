@@ -2,9 +2,7 @@ import { Respuesta } from "../components/respuesta.tsx";
 
 const Page = () => {
     return (
-        <div>
-            <Respuesta data="Has fallado la pregunta" />
-        </div>
+        <Respuesta data="Has fallado la pregunta" />
     );
 };
 export default Page;
